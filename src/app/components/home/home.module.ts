@@ -5,6 +5,7 @@ import { BtnPrimaryComponent } from 'src/app/shared/btn-primary/btn-primary.comp
 import { BrowserModule } from '@angular/platform-browser';
 import { MainAnimationComponent } from 'src/app/shared/main-animation/main-animation.component';
 import { MainSectionComponent } from 'src/app/shared/main-section/main-section.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -18,6 +19,7 @@ import { MainSectionComponent } from 'src/app/shared/main-section/main-section.c
   ],
   imports: [
     BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [],
