@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+// btn-primary.component.ts
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'btn-primary',
@@ -6,7 +7,10 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./btn-primary.component.scss']
 })
 export class BtnPrimaryComponent {
+  @Input() text: string = '';
+  @Output() buttonClick: EventEmitter<void> = new EventEmitter<void>();
 
-@Input() text: string ='';
-
+  onButtonClick(): void {
+    this.buttonClick.emit();
+  }
 }
