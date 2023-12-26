@@ -6,6 +6,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { MainAnimationComponent } from 'src/app/shared/main-animation/main-animation.component';
 import { MainSectionComponent } from 'src/app/shared/main-section/main-section.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MainAboutMeComponent } from 'src/app/shared/main-about-me/main-about-me.component';
 
 
 
@@ -15,7 +16,8 @@ import { HttpClientModule } from '@angular/common/http';
     HeaderComponent,
     BtnPrimaryComponent,
     MainAnimationComponent,
-    MainSectionComponent
+    MainSectionComponent,
+    MainAboutMeComponent
   ],
   imports: [
     BrowserModule,

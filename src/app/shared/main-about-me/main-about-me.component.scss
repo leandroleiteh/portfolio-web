@@ -1,0 +1,26 @@
+section {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+
+  .main-content {
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 30px;
+      color: #151717;
+      font-weight: 200;
+    }
+
+    .bordered-paragraph {
+      border-left: 1px solid #5222D0;
+      border-width: 3px;
+
+      p {
+        font-family: 'Montserrat', sans-serif;
+        color: #151717;
+        padding-left: 10px;
+      }
+    }
+  }
+}
