@@ -13,6 +13,8 @@ export class GithubService {
   constructor(private httpClient: HttpClient) { }
 
   getRepos(): Observable<HttpResponse<Repository[]>> {
-    return this.httpClient.get<HttpResponse<Repository[]>>(GITHUB_API_URL)
+    return this.httpClient.get<Repository[]>(GITHUB_API_URL, { observe: 'response', responseType: 'json' });
   }
+
 }
+
