@@ -1,0 +1,41 @@
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  color: #151717;
+  font-weight: 200;
+  margin-top: 80px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 20px;
+}
+
+article:hover {
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+article {
+  border-radius: 4px;
+  text-align: left;
+  background-color: #F0F0F0;
+  padding: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h5 {
+  font-family: 'Montserrat', sans-serif;}
+
+btn-primary{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  margin-top: 28px;}
