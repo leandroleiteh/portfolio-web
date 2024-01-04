@@ -7,6 +7,7 @@ import { MainAnimationComponent } from 'src/app/shared/main-animation/main-anima
 import { MainSectionComponent } from 'src/app/shared/main-section/main-section.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MainAboutMeComponent } from 'src/app/shared/main-about-me/main-about-me.component';
+import { MainCardProjectComponent } from 'src/app/shared/main-card-project/main-card-project.component';
 
 
 
@@ -17,7 +18,8 @@ import { MainAboutMeComponent } from 'src/app/shared/main-about-me/main-about-me
     BtnPrimaryComponent,
     MainAnimationComponent,
     MainSectionComponent,
-    MainAboutMeComponent
+    MainAboutMeComponent,
+    MainCardProjectComponent
   ],
   imports: [
     BrowserModule,
