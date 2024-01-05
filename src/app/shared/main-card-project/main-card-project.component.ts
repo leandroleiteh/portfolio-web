@@ -9,8 +9,17 @@ import { Repository } from 'src/app/types/repository.interface';
 })
 export class MainCardProjectComponent implements OnInit {
   repositories: Repository[] = [];
+  visibleCards = 4;
 
-  constructor(private githubService: GithubService) {}
+  showMoreCards() {
+    this.visibleCards = this.repositories.length;
+  }
+
+  showMinCard() {
+    this.visibleCards = 4;
+  }
+
+  constructor(private githubService: GithubService) { }
 
   ngOnInit(): void {
     this.githubService.getRepos().subscribe({
@@ -19,5 +28,5 @@ export class MainCardProjectComponent implements OnInit {
 
     })
 
-}
+  }
 }

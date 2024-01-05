@@ -1,11 +1,22 @@
 <h1>Projects</h1>
 <div class="container">
-  <article *ngFor="let repo of repositories">
+  <article *ngFor="let repo of repositories | slice : 0 : visibleCards">
     <a [href]="repo.html_url" target="_blank">
       <h5>{{ repo.name }}</h5>
-      <h4>{{ repo.languages_url }}</h4>
+
+      <h4>{{ repo.language }}</h4>
+
       <p>{{ repo.description }}</p>
     </a>
   </article>
 </div>
-<btn-primary text="Ver todos projetos"></btn-primary>
+<btn-primary
+  *ngIf="visibleCards < repositories.length"
+  (click)="showMoreCards()"
+  text="Ver todos projetos"
+></btn-primary>
+<btn-primary
+  *ngIf="visibleCards > 4"
+  (click)="showMinCard()"
+  text="Mostrar menos"
+></btn-primary>
