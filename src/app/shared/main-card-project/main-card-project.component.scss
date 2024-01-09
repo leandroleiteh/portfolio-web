@@ -1,16 +1,16 @@
-
 h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
   color: #151717;
   font-weight: 250;
-  margin-top: 250px;}
-
+  margin-top: 250px;
+}
 
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: 300px;
   gap: 30px;
+  justify-items: center;
 }
 
 article:hover {
@@ -19,13 +19,15 @@ article:hover {
 
 
 article {
+  display: flex;
   border-radius: 4px;
   background-color: #F0F0F0;
   padding-right: 5px;
   padding-left: 10px;
-  display: flex;
-  flex-direction: column;
-  }
+  width: 300px;
+  height: 150px;
+  align-items: center;
+}
 
 a {
   text-decoration: none;
@@ -41,46 +43,47 @@ h5 {
 
 }
 
-  h4{
-    color: #DBFFFF;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #8455FF;
-    text-transform: uppercase;
-    font-size: 10px;
-    display: inline-block;
-    padding: 3px;
-    border-radius: 1.23px;
-    gap: 3px;
-  }
+h4 {
+  color: #DBFFFF;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #8455FF;
+  text-transform: uppercase;
+  font-size: 10px;
+  display: inline-block;
+  padding: 3px;
+  border-radius: 1.23px;
+  gap: 3px;
+}
 
-  p{
-    margin-top: 0px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    color: #1F2626;
-    font-size: 15px;
+p {
+  margin-top: 0px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #1F2626;
+  font-size: 15px;
 
-  }
+}
 
-btn-primary{
+btn-primary {
   display: flex;
-  align-items: center;
-  align-content: center;
   flex-direction: column;
-  margin-top: 28px;}
+  margin-top: 28px;
+}
 
 
-  @media (min-width: 1080px) {
-    .container {
-      grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-      gap: 25px;
-    }
-
-    h1 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 25px;
-      color: #151717;
-      font-weight: 200;
-      margin-top: 110px;}
-
+@media (min-width: 1080px) {
+  .container {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
   }
+
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: #151717;
+    font-weight: 200;
+    margin-top: 110px;
+  }
+
+}
