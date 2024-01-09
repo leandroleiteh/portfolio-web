@@ -10,7 +10,6 @@ import { MainAboutMeComponent } from 'src/app/shared/main-about-me/main-about-me
 import { MainCardProjectComponent } from 'src/app/shared/main-card-project/main-card-project.component';
 
 
-
 @NgModule({
   declarations: [
     HomeComponent,
@@ -23,7 +22,7 @@ import { MainCardProjectComponent } from 'src/app/shared/main-card-project/main-
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [],
