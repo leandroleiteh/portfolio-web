@@ -8,9 +8,7 @@ h1 {
 
 .container {
   display: grid;
-  grid-template-columns: 300px;
-  gap: 30px;
-  justify-items: center;
+  grid-row-gap: 20px;
 }
 
 article:hover {
@@ -20,13 +18,11 @@ article:hover {
 
 article {
   display: flex;
-  border-radius: 4px;
+  border-radius: 6px;
   background-color: #F0F0F0;
-  padding-right: 5px;
   padding-left: 10px;
   width: 300px;
   height: 150px;
-  align-items: center;
 }
 
 a {
@@ -73,9 +69,8 @@ btn-primary {
 
 @media (min-width: 1080px) {
   .container {
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    gap: 25px;
-    max-width: 1000px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px
   }
 
   h1 {
@@ -84,6 +79,13 @@ btn-primary {
     color: #151717;
     font-weight: 200;
     margin-top: 110px;
+  }
+
+  btn-primary {
+    display: flexbox;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 28px;
   }
 
 }

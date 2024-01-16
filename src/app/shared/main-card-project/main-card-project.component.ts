@@ -9,14 +9,14 @@ import { Repository } from 'src/app/types/repository.interface';
 })
 export class MainCardProjectComponent implements OnInit {
   repositories: Repository[] = [];
-  visibleCards = 4;
+  visibleCards = 3;
 
   showMoreCards() {
     this.visibleCards = this.repositories.length;
   }
 
   showMinCard() {
-    this.visibleCards = 4;
+    this.visibleCards = 3;
   }
 
   constructor(private githubService: GithubService) { }
