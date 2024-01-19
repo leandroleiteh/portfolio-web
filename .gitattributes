@@ -1,0 +1,4 @@
+*.js linguist-language=TypeScript
+*.html linguist-language=TypeScript
+dist/* linguist-vendored
+jquery.js linguist-vendored=true
